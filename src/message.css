@@ -1,0 +1,107 @@
+.content__page{
+    background-image: url('imagens/Forma\ 1.png');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.page{
+    background-color: #fff;
+}
+.content__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 49.5px;
+}
+.content__head__menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.content__presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 16px;
+    gap: 8px;
+}
+.content__presentation__p{
+    font-family: var(--font-family-poppins);
+    font-size: 16px;
+    color: var(--blue-color);
+    width: 200px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.content__form{
+    width: 85vw;
+    background-color: rgba(246, 246, 246, 1.0);
+    border-radius: 8px;
+    padding: 8px;
+}
+.content__form__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 16px;
+}
+.content__form__div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.content__form__p{
+    font-size: 16px;
+    color: var(--blue-color);
+    font-family: var(--font-family-poppins);
+    font-weight: 900;
+}
+.content__form__input{
+    height: 48px;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.116);
+}
+.content__form__input::placeholder{
+    padding-left: 1em;
+    font-family: var(--font-family-poppins);
+    color: var(--light-gray-color);
+}
+.texta{
+    height: 180px;
+}
+.texta::placeholder{
+    padding-top: 20px;
+}
+.content__form__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+.content__form__btn__submit{
+    border: 0;
+    background-color: var(--coral-color);
+    color: #fff;
+    font-family: var(--font-family-poppins);
+    font-size: 16px;
+    padding: 8px 48px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.content__footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--green-color);
+    margin-top: auto;
+    padding: 50px;
+}
+
+.footer__end__p{
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-family-poppins);
+}

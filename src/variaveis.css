@@ -1,0 +1,15 @@
+@charset "UTf-8";
+
+
+:root{
+    --blue-color:#3772FF;
+    --green-color:#36D6AD;
+    --coral-color:#FC7071;
+    --cream-color:#FCF0E3;
+    --gray-color:#737380;
+    --light-gray-color:#BCBCBC;
+    --light-gray-background:#F6F6F6;
+
+    --font-family-ibm-plex:"IBM Plex Sans", sans-serif;
+    --font-family-poppins:"Poppins", sans-serif;
+}

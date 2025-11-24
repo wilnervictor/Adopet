@@ -1,0 +1,91 @@
+
+.content__page{
+    background-image: url('imagens/Forma\ 1.png');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.page{
+    background-color: #fff;
+}
+.content__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 49.5px;
+}
+.content__head__menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.content__presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.content__presentation__p{
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    color: var(--blue-color);
+    width: 250px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.content__presentation__animals{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(246, 246, 246, 0.4);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.content__presentation__animals__h3{
+    color: var(--blue-color);
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+.content__presentation__animals__p{
+    color: var( --gray-color);
+    font-family: var(--font-family-poppins);
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.content__presentation__animals__location{
+    color: var( --gray-color);
+    font-family: var(--font-family-poppins);
+    font-size: 14px;
+    padding-top: 30px;
+    margin-bottom: 5px;
+}
+.content__presentation__animals__message{
+    display: flex;
+    gap: 10px;
+    color: var( --gray-color);
+    font-family: var(--font-family-poppins);
+    font-size: 12px;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.content__footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--green-color);
+    margin-top: auto;
+    padding: 50px;
+}
+
+.footer__end__p{
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-family-poppins);
+}
