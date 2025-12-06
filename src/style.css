@@ -13,11 +13,20 @@
 .content__head{
     display: flex;
     padding: 50px 0 0 50px;
-    gap: 60px;
+    gap: 50px;
 }
+ .content__presentation__title__big{
+        display: none;
+    }
+    .content__head__logo__img__big{
+        display: none;
+    }
 .content__head__logo__img{
     display: none;
 }
+.content__head__a__big{
+        display: none;
+    }
 .content__presentation{
     background-image: url('imagens/Forma\ 2.png');
     background-repeat: no-repeat;
@@ -81,6 +90,9 @@
 .footer__img__average{
     display: none;
 }
+.footer__img__big{
+    display: none;
+}
 .content__footer{
     margin-top: auto;
 }
@@ -103,6 +115,7 @@
     }
     .content__presentation{
         background-image: none;
+        margin-top: 180px;
     }
     .content__presentation__title__small{
         display: none;
@@ -110,16 +123,11 @@
     .content__presentation__title__average{
         display: block;
     }
-    .content__presentation{
-        margin-top: 180px;
-    }
     .content__presentation__img{
         padding-bottom: 40px;
     }
     .content__presentation__p{
         width: 374px;
-    }
-    .content__presentation__p{
         display: none;
     }
     .content__presentation__p__average{
@@ -139,6 +147,47 @@
         display: none;
     }
     .footer__img__average{
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1440px){
+    .content__page{
+        background-image: url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+    }
+    .content__head{
+        padding: 50px 0 0 161px;
+    }
+    .content__presentation__title__average{
+        display: none;
+    }
+    .content__presentation__p__average{
+        width: 478px;
+    }
+    .content__head__logo__img{
+        display: none;
+    }
+    .content__head__a__big__div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .content__head__a{
+        display: none;
+    }
+    .content__head__a__big{
+        display: block;
+    }
+    .content__head__logo__img__big{
+        display: block;
+    }
+    .content__presentation__title__big{
+        display: block;
+    }
+    .footer__img__average{
+        display: none;
+    }
+    .footer__img__big{
         display: block;
         margin: auto;
     }

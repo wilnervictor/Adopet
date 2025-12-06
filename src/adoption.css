@@ -6,7 +6,8 @@
     background-position: top left;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh; /* ← trocar aqui */
+    overflow-x: hidden;
 }
 .page{
     background-color: #fff;
@@ -20,6 +21,9 @@
     display: flex;
     align-items: center;
     gap: 60px;
+}
+.content__head__logo__img{
+    display: none;
 }
 .content__presentation{
     display: flex;
@@ -36,15 +40,23 @@
     text-align: center;
     padding-bottom: 22px;
 }
+.line__break{
+    display: none;
+}
+.content__presentation__animals__container{
+    display: none;
+}
 .content__presentation__animals{
     display: flex;
     gap: 20px;
     background-color: rgba(246, 246, 246, 0.4);
-    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 10px;
-
+    margin-bottom: 16px;
+}
+.content__presentation__container__animals{
+    width: 100%;
 }
 .content__presentation__animals__h3{
     color: var(--blue-color);
@@ -81,11 +93,52 @@
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
-    padding: 50px;
+    padding-top: 41px;
+    padding-bottom: 39px;
 }
 
 .footer__end__p{
     color: #fff;
     text-align: center;
     font-family: var(--font-family-poppins);
+}
+@media screen and (min-width: 768px) {
+    .content__page{
+        background-image: url('imagens/Forma\ 1v.png');
+        background-size: 560px;
+        background-position: left top;
+    }
+    .content__head__logo__img{
+        display: block;
+    }
+    .content__presentation{
+        margin-top: 150px;
+    }
+    .line__break{
+        display: block;
+    }
+    .content__presentation__p{
+        width: 373px;
+    }
+    .content__presentation__animals{
+        margin-bottom: 0;
+    }
+    .content__presentation__container__animals{
+        display: flex;
+        height: 1000px;
+        max-width: 700px;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+    }
+    .content__presentation__animals{
+        width: 320px;
+    }
+    .content__presentation__title__small{
+        display: none;
+    }
+    .content__presentation__title__average{
+        display: block;
+    }
+    
 }

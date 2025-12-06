@@ -95,8 +95,7 @@
 .footer__end__p{
     color: #fff;
     font-family: var(--font-family-poppins);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 41px;
 }
 @media screen and (min-width: 768px) {
     .content__page{
@@ -109,6 +108,8 @@
     }
     .content__presentation{
         background-image: none;
+        margin-bottom: 185px;
+         margin-top: 180px;
     }
     .content__presentation__title__small{
         display: none;
@@ -122,11 +123,11 @@
         width: 500px;
         line-height: 1.2em;
     }
+    .form__p{
+        font-size: 18px;
+    }
     .name__form{
         order: -1;
-    }
-    .content__presentation{
-        margin-top: 180px;
     }
     .content__presentation__img{
         padding-bottom: 40px;
@@ -134,15 +135,5 @@
     .content__presentation__bnt__div{
         padding: 12px 102px;
         font-size: 18px;
-    }
-    .footer__img{
-        display: none;
-    }
-    .footer__img__average{
-        display: block;
-        margin: auto;
-    }
-    .content__imput__general{
-        width: 344px;
     }
 }

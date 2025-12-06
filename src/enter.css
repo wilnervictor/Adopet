@@ -22,6 +22,12 @@
 .content__presentation__img{
     margin-bottom: 25px;
 }
+.content__head__logo__img{
+    display: none;
+}
+.content__presentation__title__average{
+    display: none;
+}
 .content__p{
     color: var(--blue-color);
     font-family: var(--font-family-poppins);
@@ -54,7 +60,7 @@
     background-color: var(--light-gray-background);
     padding: 16px;
     border-radius: 6px;
-    width: 80vw;
+    width: 300px;
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.123);
    
 }
@@ -77,7 +83,7 @@
 }
 .content__imput__submit___enter{
     border: 0;
-    padding: 15px 60px;
+    padding: 8px 48px;
     font-family: var(--font-family-poppins);
     background-color: var(--coral-color);
     font-size: 18px;
@@ -89,9 +95,52 @@
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
-    padding: 50px;
+    padding: 41px;
 }
 .footer__end__p{
     color: #fff;
     font-family: var(--font-family-poppins);
+}
+@media screen and (min-width: 768px) {
+    .content__page{
+        background-image: url('imagens/Patasv2.png'), url('imagens/Forma\ 1v.png'), url('imagens/Forma\ v2.png');
+        background-size: 230px, 560px, 130px;
+        background-position: top right, left top, right top 280px;
+    }
+    .content__head__logo__img{
+        display: block;
+    }
+    .content__presentation{
+        background-image: none;
+        margin-bottom: 434px;
+        margin-top: 180px
+    }
+    .content__presentation__title__small{
+        display: none;
+    }
+    .content__presentation__title__average{
+        display: block;
+    }
+    .content__p{
+        font-size: 18px;
+        margin-bottom: 2px;
+        width: 500px;
+        line-height: 1.2em;
+    }
+    .form__p{
+        font-size: 18px;
+    }
+    .content__presentation__img{
+        padding-bottom: 40px;
+    }
+    .content__presentation__bnt__div{
+        padding: 12px 102px;
+        font-size: 18px;
+    }
+    .content__form__p__password{
+        display: none;
+    }
+    .content__imput__submit___enter{
+       padding: 8px 54px;
+    }
 }

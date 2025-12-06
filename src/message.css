@@ -20,6 +20,15 @@
     align-items: center;
     gap: 60px;
 }
+.content__head__logo__img{
+    display: none;
+}
+.content__head__usuario{
+    display: block;
+}
+.content__head__usuario__average{
+    display: none;
+}
 .content__presentation{
     display: flex;
     flex-direction: column;
@@ -37,7 +46,7 @@
     padding-bottom: 22px;
 }
 .content__form{
-    width: 85vw;
+    width: 300px;
     background-color: rgba(246, 246, 246, 1.0);
     border-radius: 8px;
     padding: 8px;
@@ -104,4 +113,34 @@
     color: #fff;
     text-align: center;
     font-family: var(--font-family-poppins);
+}
+@media screen and (min-width: 768px) {
+    .content__page{
+        background-image: url('imagens/Forma\ 1v.png'), url('imagens/Forma\ v2.png');
+        background-size: 560px, 130px;
+        background-position: left top, right top 260px;
+    }
+    .content__head__logo__img{
+        display: block;
+    }
+    .content__head__usuario{
+        display: none;
+    }
+    .content__head__usuario__average{
+        display: block;
+    }
+    .content__presentation{
+        background-image: none;
+        margin-bottom: 90px;
+        margin-top: 130px;
+    }
+    .content__presentation__p{
+        width: 460px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content__form{
+        width: 524px;
+    }
+    
 }
