@@ -2,7 +2,7 @@
     background-image: url('imagens/Patas\(1\).png'), url('imagens/Forma\ 1.png'), url('imagens/Forma\ 3.png');;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 142px, 350px, 82px;
-    background-position: top right, left top, bottom -70px left;
+    background-position: top right, left top, bottom 130px left;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -11,6 +11,7 @@
     display: flex;
     gap: 60px;
     padding: 50px 0 0 50px;
+    align-items: center;
 }
 .content__presentation{
     display: flex;
@@ -20,6 +21,9 @@
     margin-bottom: 80px;
 }
 .content__head__logo__img{
+    display: none;
+}
+.content__head__a__big__div{
     display: none;
 }
 .content__presentation__img{
@@ -38,6 +42,7 @@
     line-height: 1.2em;
 }
 .content__form{
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +121,7 @@
     }
     .content__presentation__title__average{
         display: block;
+        width: 251px;
     }
     .content__p{
         font-size: 18px;
@@ -129,6 +135,9 @@
     .name__form{
         order: -1;
     }
+    .content__form{
+        width: 344px;
+    }
     .content__presentation__img{
         padding-bottom: 40px;
     }
@@ -136,4 +145,59 @@
         padding: 12px 102px;
         font-size: 18px;
     }
+    .submit__big{
+        display: none;
+    }
+}
+@media screen and (min-width: 1440px){
+     .content__page{
+        background-image: url('imagens/Patas1440.png'), url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+        background-size: 317px, 560px, 134px;
+        background-position: top right, left top, right top 200px;
+    }
+    .content__head__a{
+        display: none;
+    }
+    .content__head__a__big__div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .content__inc{
+        padding: 50px 0 0 161px;
+        gap: 50px;
+    }
+    .content__presentation{
+        margin-top: 40px;
+    }
+    .content__presentation__img{
+        margin-bottom: 5px;
+    }
+    .content__presentation__title__average{
+        width: 259px;
+    }
+    .content__form{
+        margin-top: 40px;
+    }
+   .form__p{
+        font-weight: 700;
+   }
+   .content__imput__general::placeholder{
+        font-size: 16px;
+   }
+   .input__width{
+        width: 552px;
+   }
+   .input__width__password{
+        width: 362px;
+   }
+   .content__imput__submit{
+    font-size: 18px;
+   }
+   .submit__small{
+    display: none;
+   }
+   .submit__big{
+    display: block;
+   }
 }

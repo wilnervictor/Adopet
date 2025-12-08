@@ -1,9 +1,9 @@
 import { personalData } from "./register.js";
 
-const enterBnt = document.querySelector('.content__imput__submit___enter')
+const formSubmit = document.getElementById('content__form__tag')
 
-if(enterBnt){
-enterBnt.addEventListener('click', (event) => {
+
+formSubmit.addEventListener('submit', (event) => {
     event.preventDefault()
 
 
@@ -23,4 +23,3 @@ enterBnt.addEventListener('click', (event) => {
        alert('Email ou senha incorreta!');
     }
 })
-}

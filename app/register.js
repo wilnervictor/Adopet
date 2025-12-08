@@ -3,10 +3,10 @@
 export const personalData = JSON.parse(localStorage.getItem('personalData')) || []
 
 //Submit
-const registerBnt = document.querySelector('.content__imput__submit')
+const registerBnt = document.getElementById('content__form__tag')
 
 if(registerBnt){
-registerBnt.addEventListener('click', (event) =>{
+registerBnt.addEventListener('submit', (event) =>{
 //Input
 const registerEmail = document.querySelector('#imput__email')
 const registerName = document.querySelector('#imput__name')
