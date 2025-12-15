@@ -1,72 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/register.css">
-    <link rel="stylesheet" href="src/reset.css">
-    <link rel="stylesheet" href="src/variaveis.css">
-    <link rel="shortcut icon" href="src/imagens/Logos-05.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/register.css" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/variaveis.css" />
+    <link
+      rel="shortcut icon"
+      href="src/imagens/Logos-05.ico"
+      type="image/x-icon"
+    />
     <script src="app/register.js" type="module" defer></script>
+    <script src="app/placeholderRegister.js" type="module" defer></script>
     <title>Adopet</title>
-</head>
-<body class="content__page">
- <header class="content__head">
+  </head>
+  <body class="content__page">
+    <header class="content__head">
       <div class="content__inc">
+        <div class="content__head__logo__img">
+          <img src="src/imagens/Logov1.png" alt="Icone Adopet" />
+        </div>
 
-           <div class="content__head__logo__img"><img src="src/imagens/Logov1.png" alt="Icone Adopet"></div>
+        <div class="content__head__a">
+          <a href="index.html"
+            ><img src="src/imagens/Casa.png" alt="Pricipal"
+          /></a>
+        </div>
+        <div class="content__head__a">
+          <a href="#"
+            ><img src="src/imagens/Mensagens.png" alt="Mensagens"
+          /></a>
+        </div>
 
-            <div class="content__head__a"><a href="index.html"><img src="src/imagens/Casa.png" alt="Pricipal"></a></div>
-            <div class="content__head__a"><a href="#"><img src="src/imagens/Mensagens.png" alt="Mensagens"></a></div>
-
-            <div class="content__head__a__big__div">
-            <div class="content__head__a__big"><a href="index.html"><img src="src/imagens/Casa 1440.svg" alt="Pricipal"></a></div>
-            <div class="content__head__a__big"><a href="#"><img src="src/imagens/Mensagens 1440.svg" alt="Mensagens"></a></div>
+        <div class="content__head__a__big__div">
+          <div class="content__head__a__big">
+            <a href="index.html"
+              ><img src="src/imagens/Casa 1440.svg" alt="Pricipal"
+            /></a>
+          </div>
+          <div class="content__head__a__big">
+            <a href="#"
+              ><img src="src/imagens/Mensagens 1440.svg" alt="Mensagens"
+            /></a>
+          </div>
         </div>
       </div>
-
-      
     </header>
-     <main class="content__presentation">
-        <div class="content__presentation__img">
-            <img class="content__presentation__title__small" src="src/imagens/logo1.png" alt="Adopet" width="143px" height="35px">
-            <img class="content__presentation__title__average" src="src/imagens/Logo_azul.png" alt="Adopet">
+    <main class="content__presentation">
+      <div class="content__presentation__img">
+        <img
+          class="content__presentation__title__small"
+          src="src/imagens/logo1.png"
+          alt="Adopet"
+          width="143px"
+          height="35px"
+        />
+        <img
+          class="content__presentation__title__average"
+          src="src/imagens/Logo_azul.png"
+          alt="Adopet"
+        />
+      </div>
+      <p class="content__p">Ainda não tem cadastro?</p>
+      <p class="content__p">
+        Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
+      </p>
+
+      <form class="content__form" id="content__form__tag">
+        <div class="content__form__input">
+          <p class="form__p">Email</p>
+          <input
+            type="email"
+            id="imput__email"
+            class="content__imput__general input__width"
+            required
+          />
         </div>
-        <p class="content__p">Ainda não tem cadastro?</p>
-        <p class="content__p">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
 
-        <form class="content__form" id="content__form__tag">
-
-          <div class="content__form__input">
-              <p class="form__p">Email</p>
-              <input type="email" id="imput__email" placeholder="Escolha seu melhor email" class="content__imput__general input__width" required>
-          </div>
-
-          <div class="content__form__input name__form">
-              <p class="form__p">Nome</p>
-              <input type="text" id="imput__name" placeholder="Digite seu melhor email" class="content__imput__general input__width" required>
-          </div>
-          <div class="content__form__input">
-              <p class="form__p">Senha</p>
-              <input type="password" id="imput__password" placeholder="Crie uma senha" class="content__imput__general password__eye input__width__password" required minlength="8">
-          </div>
-
-          <div class="content__form__input">
-              <p class="form__p">Confirma sua senha</p>
-              <input type="password" id="imput__password__confirm" placeholder="Repita a senha criada acima" class="content__imput__general password__eye input__width__password" required minlength="8">
-          </div>
-
-          <div class="content__imput__submit__div">
-            <input type="submit" value="Cadastrar" class="content__imput__submit submit__small">
-
-            <input type="submit" value="Cadastrar!" class="content__imput__submit submit__big">
+        <div class="content__form__input name__form">
+          <p class="form__p">Nome</p>
+          <input
+            type="text"
+            id="imput__name"
+            class="content__imput__general input__width"
+            required
+          />
         </div>
-        </form>
+        <div class="content__form__input">
+          <p class="form__p">Senha</p>
+          <input
+            type="password"
+            id="imput__password"
+            class="content__imput__general password__eye input__width__password"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <div class="content__form__input">
+          <p class="form__p">Confirma sua senha</p>
+          <input
+            type="password"
+            id="imput__password__confirm"
+            class="content__imput__general password__eye input__width__password"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <div class="content__imput__submit__div">
+          <input
+            type="submit"
+            value="Cadastrar"
+            class="content__imput__submit submit__small"
+          />
+
+          <input
+            type="submit"
+            value="Cadastrar!"
+            class="content__imput__submit submit__big"
+          />
+        </div>
+      </form>
     </main>
     <footer class="content__footer">
       <section class="footer__end">
-         <p class="footer__end__p">2022 - Desenvolvido por Alura.</p>
+        <p class="footer__end__p">2022 - Desenvolvido por Alura.</p>
       </section>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,10 +1,11 @@
 
-
 .content__page{
-    background-image: url('imagens/Forma\ 1.png');
-    background-repeat: no-repeat;
-    background-size: 350px;
-    background-position: left top;
+    background-image: url('imagens/Forma\ 1.png'), url('imagens/Forma\ 2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 350px, 80px ;
+    display: flex;
+    flex-direction: column;
+    background-position: left top, right top 220px;
     height: 100vh;
 }
 .page{
@@ -13,7 +14,8 @@
 .content__head{
     display: flex;
     padding: 50px 0 0 50px;
-    gap: 50px;
+    gap: 60px;
+    align-items: center;
 }
  .content__presentation__title__big{
         display: none;
@@ -28,9 +30,6 @@
         display: none;
     }
 .content__presentation{
-    background-image: url('imagens/Forma\ 2.png');
-    background-repeat: no-repeat;
-    background-position: right 60%;
     padding: 20px;
     margin-top: 100px;
     display: flex;
@@ -51,9 +50,9 @@
 }
 .content__presentation__p{
     color: #fff;
-    width: 280px;
+    width: 270px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 16px;
     line-height: 1.5em;
     font-family: var(--font-family-poppins);
 }
@@ -94,13 +93,14 @@
     display: none;
 }
 .content__footer{
+    text-align: center;
     margin-top: auto;
+    background-color: transparent;
 }
 
 .footer__end__p{
     color: #fff;
-    text-align: center;
-    padding: 2.5em;
+    padding: 40px;
     background-color: var(--green-color);
     font-family: var(--font-family-poppins);
 }
@@ -154,9 +154,14 @@
 @media screen and (min-width: 1440px){
     .content__page{
         background-image: url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+        background-position: left top, right top 190px;
     }
     .content__head{
         padding: 50px 0 0 161px;
+        gap: 50px;
+    }
+    .content__presentation{
+        margin-top: 30px;
     }
     .content__presentation__title__average{
         display: none;
@@ -190,5 +195,8 @@
     .footer__img__big{
         display: block;
         margin: auto;
+    }
+    .footer__end__p{
+        padding: 30px;
     }
 }

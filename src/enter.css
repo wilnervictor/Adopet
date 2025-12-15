@@ -5,12 +5,13 @@
     background-position: top right, left top, top 390px left;
     display: flex;
     flex-direction: column;
-    height: 105vh;
+    height: 100vh;
 }
 .content__inc{
     display: flex;
     gap: 60px;
     padding: 50px 0 0 50px;
+    align-items: center;
 }
 .content__presentation{
     display: flex;
@@ -23,6 +24,9 @@
     margin-bottom: 25px;
 }
 .content__head__logo__img{
+    display: none;
+}
+.content__head__a__big__div{
     display: none;
 }
 .content__presentation__title__average{
@@ -95,7 +99,7 @@
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
-    padding: 41px;
+    padding: 40px;
 }
 .footer__end__p{
     color: #fff;
@@ -127,6 +131,9 @@
         width: 500px;
         line-height: 1.2em;
     }
+    .content__imput__general{
+        width: 344px;
+    }
     .form__p{
         font-size: 18px;
     }
@@ -143,4 +150,61 @@
     .content__imput__submit___enter{
        padding: 8px 54px;
     }
+}
+@media screen and (min-width: 1440px){
+     .content__page{
+        background-image: url('imagens/Patas1440.png'), url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+        background-size: 317px, 560px, 134px;
+        background-position: top right, left top, right top 200px;
+    }
+    .content__head__a{
+        display: none;
+    }
+    
+    .content__head__a__big__div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .content__inc{
+        padding: 50px 0 0 161px;
+        gap: 16.5px;
+    }
+    .content__presentation{
+        margin-top: 40px;
+    }
+    .content__presentation__img{
+        margin-bottom: 5px;
+    }
+    .content__presentation__title__average{
+        width: 259px;
+    }
+    .content__form{
+        margin-top: 40px;
+        gap: 18px;
+    }
+    .content__p{
+        margin-bottom: 20px;
+    }
+    .content__form__input{
+        margin-top: 10px;
+    }
+   .form__p{
+        font-weight: 700;
+   }
+   .content__imput__general::placeholder{
+        font-size: 16px;
+   }
+   .input__width{
+        width: 552px;
+   }
+   .input__width__password{
+        width: 362px;
+   }
+   .content__imput__submit__div{
+        margin-top: 0px;
+   }
+   .content__footer{
+       padding: 30px;
+   }
 }

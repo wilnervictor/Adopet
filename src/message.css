@@ -26,6 +26,12 @@
 .content__head__usuario{
     display: block;
 }
+.content__head__usuario__big{
+    display: none;
+}
+.content__head__a__big__div{
+    display: none;
+}
 .content__head__usuario__average{
     display: none;
 }
@@ -106,7 +112,7 @@
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
-    padding: 50px;
+    padding: 40px;
 }
 
 .footer__end__p{
@@ -142,5 +148,48 @@
     .content__form{
         width: 524px;
     }
-    
+}
+@media screen and (min-width: 1440px){
+     .content__page{
+        background-image: url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+        background-size: 560px, 130px;
+        background-position: left top, right top 140px;
+    }
+    .content__head__a{
+        display: none;
+    }
+    .content__head__a__big{
+        display: block;
+    }
+    .content__head__a__big__div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .content__head__menu{
+        gap: 50px;
+    }
+    .content__head{
+        padding: 50px 0 0 161px;
+    }
+    .content__head__usuario__average{
+        display: none;
+    }
+    .content__head__usuario__big{
+        margin-right: 174px;
+        display: block;
+    }
+    .content__presentation__p{
+        width: 500px;
+    }
+   .content__presentation{
+        margin-top: 50px;
+        width: 552px;
+        margin: auto;
+        gap: 0;
+        margin-bottom: 5px;
+   }
+   .content__footer{
+        padding: 31px;
+   }
 }

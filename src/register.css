@@ -2,7 +2,7 @@
     background-image: url('imagens/Patas\(1\).png'), url('imagens/Forma\ 1.png'), url('imagens/Forma\ 3.png');;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 142px, 350px, 82px;
-    background-position: top right, left top, bottom 130px left;
+    background-position: top right, left top, top 430px left;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -37,7 +37,7 @@
     font-family: var(--font-family-poppins);
     font-size: 16px;
     margin-bottom: 10px;
-    width: 300px;
+    width: 261px;
     text-align: center;
     line-height: 1.2em;
 }
@@ -92,15 +92,19 @@
     font-weight: 900;
     border-radius: 6px;
 }
+.submit__big{
+    display: none;
+}
 .content__footer{
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
+    padding: 40px;
 }
 .footer__end__p{
     color: #fff;
     font-family: var(--font-family-poppins);
-    padding: 41px;
+    
 }
 @media screen and (min-width: 768px) {
     .content__page{
@@ -192,12 +196,15 @@
         width: 362px;
    }
    .content__imput__submit{
-    font-size: 18px;
+        font-size: 18px;
    }
    .submit__small{
-    display: none;
+        display: none;
    }
    .submit__big{
-    display: block;
+        display: block;
+   }
+   .content__footer{
+        padding: 30px;
    }
 }

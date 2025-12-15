@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/enter.css">
-    <link rel="stylesheet" href="src/reset.css">
-    <link rel="stylesheet" href="src/variaveis.css">
-    <link rel="shortcut icon" href="src/imagens/Logos-05.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/enter.css" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/variaveis.css" />
+    <link
+      rel="shortcut icon"
+      href="src/imagens/Logos-05.ico"
+      type="image/x-icon"
+    />
     <script src="app/enter.js" type="module" defer></script>
+    <script src="app/placeholderEnter.js" type="module" defer></script>
     <title>Adopet</title>
-</head>
-<body class="content__page">
- <header class="content__head">
+  </head>
+  <body class="content__page">
+    <header class="content__head">
       <div class="content__inc">
-            <div class="content__head__logo__img"><img src="src/imagens/Logov1.png" alt="Icone Adopet"></div>
-            <div><a href="index.html"><img src="src/imagens/Casa.png" alt="Pricipal"></a></div>
-            <div><a href="#"><img src="src/imagens/Mensagens.png" alt="Mensagens"></a></div>
+        <div class="content__head__logo__img">
+          <img src="src/imagens/Logov1.png" alt="Icone Adopet" />
+        </div>
+        <div>
+          <a class="content__head__a" href="index.html"
+            ><img src="src/imagens/Casa.png" alt="Pricipal"
+          /></a>
+        </div>
+        <div>
+          <a class="content__head__a" href="#"
+            ><img src="src/imagens/Mensagens.png" alt="Mensagens"
+          /></a>
+        </div>
+
+        <div class="content__head__a__big__div">
+          <div class="content__head__a__big">
+            <a href="index.html"
+              ><img src="src/imagens/Casa 1440.svg" alt="Pricipal"
+            /></a>
+          </div>
+          <div class="content__head__a__big">
+            <a href="#"
+              ><img src="src/imagens/Mensagens 1440.svg" alt="Mensagens"
+            /></a>
+          </div>
+        </div>
       </div>
     </header>
-     <main class="content__presentation">
-        <div class="content__presentation__img">
-             <img class="content__presentation__title__small" src="src/imagens/logo1.png" alt="Adopet" width="143px" height="35px">
-            <img class="content__presentation__title__average" src="src/imagens/Logo_azul.png" alt="Adopet">
+    <main class="content__presentation">
+      <div class="content__presentation__img">
+        <img
+          class="content__presentation__title__small"
+          src="src/imagens/logo1.png"
+          alt="Adopet"
+          width="143px"
+          height="35px"
+        />
+        <img
+          class="content__presentation__title__average"
+          src="src/imagens/Logo_azul.png"
+          alt="Adopet"
+        />
+      </div>
+      <p class="content__p">Já tem conta? Faça seu login:</p>
+
+      <form method="get" class="content__form" id="content__form__tag">
+        <div class="content__form__input">
+          <p class="form__p">Email</p>
+          <input
+            type="email"
+            id="imput__email__enter"
+            class="content__imput__general input__width"
+            required
+          />
         </div>
-        <p class="content__p">Já tem conta? Faça seu login:</p>
-        
 
-        <form method="get" class="content__form" id="content__form__tag">
-
-          <div class="content__form__input">
-              <p class="form__p">Email</p>
-              <input type="email" id="imput__email__enter" placeholder="Insira seu email" class="content__imput__general" required>
-          </div>
-
-          <div class="content__form__input">
-              <p class="form__p">Senha</p>
-              <input type="password" id="imput__password__enter" placeholder="Insira sua senha" class="content__imput__general password__eye" required >
-          </div>
-            <p><a href="#" class="content__form__p__password">Esqueci minha senha.</a></p>
-          <div class="content__imput__submit__div"><input type="submit" value="Entrar" class="content__imput__submit___enter"></div>
-        </form>
+        <div class="content__form__input">
+          <p class="form__p">Senha</p>
+          <input
+            type="password"
+            id="imput__password__enter"
+            class="content__imput__general password__eye input__width__password"
+            required
+          />
+        </div>
+        <p>
+          <a href="#" class="content__form__p__password"
+            >Esqueci minha senha.</a
+          >
+        </p>
+        <div class="content__imput__submit__div">
+          <input
+            type="submit"
+            value="Entrar"
+            class="content__imput__submit___enter"
+          />
+        </div>
+      </form>
     </main>
     <footer class="content__footer">
       <section class="footer__end">
-         <p class="footer__end__p">2022 - Desenvolvido por Alura.</p>
+        <p class="footer__end__p">2022 - Desenvolvido por Alura.</p>
       </section>
     </footer>
-</body>
+  </body>
 </html>

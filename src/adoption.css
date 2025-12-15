@@ -32,6 +32,12 @@
     margin-top: 40px;
     gap: 20px;
 }
+.content__head__a__big{
+    display: none;
+}
+.content__head__usuario__big{
+    display: none;
+}
 .content__presentation__p{
     font-family: var(--font-family-poppins);
     font-size: 20px;
@@ -93,8 +99,7 @@
     text-align: center;
     background-color: var(--green-color);
     margin-top: auto;
-    padding-top: 41px;
-    padding-bottom: 39px;
+    padding: 40px;
 }
 
 .footer__end__p{
@@ -121,7 +126,7 @@
         width: 373px;
     }
     .content__presentation__animals{
-        margin-bottom: 0;
+         margin-bottom: 0;
     }
     .content__presentation__container__animals{
         display: flex;
@@ -131,9 +136,6 @@
         gap: 16px;
         align-items: center;
     }
-    .content__presentation__animals{
-        width: 320px;
-    }
     .content__presentation__title__small{
         display: none;
     }
@@ -141,4 +143,59 @@
         display: block;
     }
     
+}
+@media screen and (min-width: 1440px){
+     .content__page{
+        background-image: url('imagens/Forma1440.svg'), url('imagens/Forma\ 1440.svg');
+        background-size: 560px, 130px;
+        background-position: left top, right top 140px;
+    }
+    .content__head__a{
+        display: none;
+    }
+    .content__head__a__big{
+        display: block;
+    }
+    .content__head__a__big__div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .content__head__menu{
+        gap: 50px;
+    }
+    .content__head{
+        padding: 50px 0 0 161px;
+    }
+    .content__head__usuario{
+        display: none;
+    }
+    .content__head__usuario__big{
+        margin-right: 174px;
+        display: block;
+    }
+    .content__presentation__p{
+        width: 500px;
+    }
+    .line__break{
+        display: none;
+    }
+   .content__presentation{
+        margin-top: 50px;
+        height: 650px;
+        width: 1200px;
+        margin: auto;
+        gap: 0;
+        margin-bottom: 5px;
+   }
+   .content__presentation__container__animals{
+        max-width: none;
+        justify-content: center;
+   }
+   .content__presentation__animals{
+        width: 353px;
+   }
+   .content__footer{
+        padding: 31px;
+   }
 }
